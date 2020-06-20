@@ -1,0 +1,41 @@
+{
+    "coord":{
+        "lon":-98.36,
+        "lat":35.2
+    },
+    "weather":[{
+            "id":800,
+            "main":"Clear",
+            "description":"clear sky",
+            "icon":"01d"
+    }],
+    "base":"stations",
+    "main":{
+        "temp":292.83,
+        "feels_like":292.95,
+        "temp_min":292.59,
+        "temp_max":293.15,
+        "pressure":1016,
+        "humidity":88
+    },
+    "visibility":16093,
+    "wind":{
+        "speed":3.6,
+        "deg":170
+    },
+    "clouds":{
+        "all":1
+    },
+    "dt":1592663125,
+    "sys":{
+        "type":1,
+        "id":3623,
+        "country":"US",
+        "sunrise":1592651953,
+        "sunset":1592704261
+    },
+    "timezone":-18000,
+    "id":0,
+    "name":"Albert",
+    "cod":200
+}
