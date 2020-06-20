@@ -3,26 +3,71 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+h1{
+    font-size: 8vh;
+    line-height: 8vh;
+}
+
 #app{
     display: grid;
-    grid-auto-rows: minmax(150px, auto);
+    grid-template-rows: 20vh 20vh ;
+    grid-template-areas: 
+    "grid-headline"
+    "grid-zip"
+    "grid-feel"
+    "grid-entry";
+    /* grid-auto-rows: minmax(150px, auto); */
     /* grid-template-columns:  */
-    height:100vh;
-    background: #f23557;
-    color: #f0d43a;
-    justify-content: center;
+    /* height:100vh; */
+    background: whitesmoke;
+    color: black;
+    /* justify-content: center; */
+    padding-left: 2vw;
     grid-gap: 1em;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
 
+    .headline {
+        display: flex;
+        grid-area: grid-headline;
+        background-color: rgb(63, 61, 61);
+        color: white;
+        border-radius: 1vh;
+        width: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-decoration: underline;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .zip {
+        grid-area: grid-zip;
+    }
+
+    .feel {
+        grid-area: grid-feel;
+    }
+
+    .entry{
+        grid-area: grid-entry;
+        background: rgba(59, 74, 107, .4);
+    }
+
 .holder{
-
+    display: flex;
+    flex-direction: column;
+    max-width: 96vw;
+    background-color: rgb(202, 196, 196);;
+    /* border: 2px solid green; */
+    border-radius: 10px;
+    padding: 2vh 2vw;
 }
 
-.entry{
-    background: rgba(59, 74, 107, .4);
-}
+
+
+
 
 #entryHolder{
 
@@ -40,9 +85,6 @@ body{
 
 }
 
-.headline {
-
-}
 .title{
 
 }
@@ -57,30 +99,32 @@ input{
     display:block;
     height: 60px;
     width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
+    background: white;
+    color: black;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     border: none;
+    border-radius: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 button{
     width: 400px;
     height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
+    background: green;
+    color: white;
+    font-size: 30px;
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
-}
-h1{
-    font-size: 36px;
+    border-radius: 2vw;
 }
 
+
 textarea{
-    background:#22b2da;
-    color: #f0d43a;
+    background:white;
+    color: black;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
@@ -93,19 +137,19 @@ button:focus {
 }
 /* Style for Placeholder Text*/
 ::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
+    color: gray; 
     font-family: 'Oswald', sans-serif;
 
 } 
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
+    color: gray; 
     font-family: 'Oswald', sans-serif;
 
 } 
   
 ::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
+    color: gray; 
     font-family: 'Oswald', sans-serif;
 
 } 
