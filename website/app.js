@@ -5,7 +5,7 @@
  * Global Variables 
 */
 const sourceUrl = 'http://api.openweathermap.org/data/2.5/weather?zip=';
-const apiKey = '&APPID=9cbd9a29df5e8111ea1256178312c18c';
+const apiKey = '&APPID=9cbd9a29df5e8111ea1256178312c18c&units=imperial';
 
 const userFeelings = document.getElementById('feelings');
 const zipCode = document.getElementById('zip');
